@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      
+      <div class="row">
+        <form name="forms" class="form">
+        <div class="col-12 col-md-12 col-sm-12" >
+            <div class="form-group">
+              <textarea class="form-control" type="number" id="exampleFormControlTextarea1" rows="1" name="answer"></textarea>
+            </div>
+            
+            <div class="row">
+              <div class="col-12 col-md-12 col-sm-12 d-flex">
+                  <button class="btn btn-light btn-number"
+                  onclick="forms.answer.value+='1'" value=" 1 "> 1 </button>
+                  <button class="btn btn-light btn-number" onclick="forms.answer.value+='2'" value=" 2 "> 2 </button>
+                  <button class="btn btn-light btn-number" onclick="forms.answer.value+='3'" value=" 3 "> 3 </button>
+                  <button class="btn btn-light btn-number plus" onclick="forms.answer.value+='+'" value=" + "> + </button>
+              </div>
+              <div class="col-12 col-md-12 col-sm-12 d-flex">
+                <button class="btn btn-light btn-number" onclick="forms.answer.value+='4'" value=" 4 "> 4 </button>
+                <button class="btn btn-light btn-number" onclick="forms.answer.value+='5'" value=" 5 "> 5 </button>
+                <button class="btn btn-light btn-number" onclick="forms.answer.value+='6'" value=" 6 "> 6 </button>
+                <button class="btn btn-light btn-number minus" onclick="forms.answer.value+='-'" value=" - "> - </button>
+              </div>
+              <div class="col-12 col-md-12 col-sm-12 d-flex">
+                <button class="btn btn-light btn-number" onclick="forms.answer.value+='7'" value=" 7 "> 7 </button>
+                <button class="btn btn-light btn-number" onclick="forms.answer.value+='8'" value=" 8 "> 8 </button>
+                <button class="btn btn-light btn-number" onclick="forms.answer.value+='9'"
+                value=" 9 " > 9 </button>
+                <button class="btn btn-light btn-number mult"
+                value=" * "
+                onclick="forms.answer.value+='*'"> * </button>
+              </div>
+              <div class="col-12 col-md-12 col-sm-12 d-flex">
+                <button class="btn btn-light btn-number"
+                value=" . "
+                onclick="forms.answer.value+='.'"> . </button>
+                <button class="btn btn-light btn-number"
+                value=" 0 "
+                onclick="forms.answer.value+='0'"> 0 </button>
+                <button class="btn btn-light btn-number"
+                value=" C " onclick="forms.answer.value=''"> C </button>
+                <button class="btn btn-light btn-number divi"
+                value=" / "
+                onclick="forms.answer.value+='/'"> / </button>
+              </div>
+              
+              <div class="col-12">
+                <button class="btn btn-light btn-equal"
+                onclick="forms.answer.value=eval(forms.answer.value)" value=" = ">=</button>
+              </div>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
